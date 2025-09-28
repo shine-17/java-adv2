@@ -6,7 +6,6 @@ import java.util.Set;
 import java.util.SortedMap;
 
 public class AvailableCharsetsMain {
-
     public static void main(String[] args) {
         // 이용 가능한 모든 Charset 자바 + OS
         SortedMap<String, Charset> charsets = Charset.availableCharsets();
