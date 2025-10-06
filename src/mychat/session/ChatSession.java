@@ -1,4 +1,4 @@
-package chat.session;
+package mychat.session;
 
 
 import java.io.DataInputStream;
@@ -22,8 +22,7 @@ public class ChatSession {
     }
 
     public void sendTo(String message) throws IOException {
-        String send = "[" + id + "] " + message;
-        output.writeUTF(send);
+        output.writeUTF(message);
     }
 
     public String getId() {

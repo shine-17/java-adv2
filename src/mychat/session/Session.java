@@ -1,7 +1,6 @@
-package chat.session;
+package mychat.session;
 
 import network.tcp.SocketCloseUtil;
-import network.tcp.v6.SessionManagerV6;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -44,6 +43,8 @@ public class Session implements Runnable {
                     this.session = session;
 
                     sessionManager.sendTo("[" + session.getId() + "] 님 입장하셨습니다.");
+                    System.out.println(id + "님 채팅방 입장");
+                    continue;
                 }
 
                 if (message.equals("exit")) {

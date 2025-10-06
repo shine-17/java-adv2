@@ -1,7 +1,7 @@
-package chat.server;
+package mychat.server;
 
-import chat.session.Session;
-import chat.session.SessionManager;
+import mychat.session.Session;
+import mychat.session.SessionManager;
 
 import java.io.IOException;
 import java.net.ServerSocket;

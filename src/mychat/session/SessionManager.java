@@ -1,4 +1,4 @@
-package chat.session;
+package mychat.session;
 
 import java.io.IOException;
 import java.util.ArrayList;
