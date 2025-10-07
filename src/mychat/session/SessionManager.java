@@ -20,7 +20,7 @@ public class SessionManager {
         return new ArrayList<>(sessions);
     }
 
-    public void sendTo(String message) {
+    public synchronized void sendTo(String message) {
         for (ChatSession session : sessions) {
             try {
                 session.sendTo(message);
